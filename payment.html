@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment - Breeze Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <header class="navbar">
+    <h1 class="logo">Breeze Travel</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Secure Payment</h2>
+    <p>Enter your payment details below</p>
+  </section>
+
+  <section class="form-section">
+    <form class="form" onsubmit="alert('Payment Successful!'); return false;">
+      <label for="cardname">Cardholder Name</label>
+      <input type="text" id="cardname" required />
+
+      <label for="cardnumber">Card Number</label>
+      <input type="text" id="cardnumber" required maxlength="16" />
+
+      <label for="expiry">Expiry Date</label>
+      <input type="month" id="expiry" required />
+
+      <label for="cvv">CVV</label>
+      <input type="password" id="cvv" required maxlength="4" />
+
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Breeze Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking - Breeze Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <header class="navbar">
+    <h1 class="logo">Breeze Travel</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Book Your Stay</h2>
+    <p>Fill the form below to confirm your booking</p>
+  </section>
+
+  <section class="form-section">
+    <form class="form" action="payment.html">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="hotel">Hotel Name</label>
+      <input type="text" id="hotel" name="hotel" required />
+
+      <label for="checkin">Check-in Date</label>
+      <input type="date" id="checkin" name="checkin" required />
+
+      <label for="checkout">Check-out Date</label>
+      <input type="date" id="checkout" name="checkout" required />
+
+      <label for="guests">Guests</label>
+      <input type="number" id="guests" name="guests" min="1" value="1" required />
+
+      <button type="submit">Proceed to Payment</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Breeze Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

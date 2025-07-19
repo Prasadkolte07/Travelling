@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Breeze Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <header class="navbar">
+    <h1 class="logo">Breeze Travel</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Login to Breeze Travel</h2>
+    <p>Access your bookings and manage your trips</p>
+  </section>
+
+  <section class="form-section">
+    <form class="form" onsubmit="alert('Logged in successfully!'); return false;">
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Breeze Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
